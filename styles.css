@@ -73,6 +73,18 @@ body {
   position: relative;
   z-index: 2;
   max-width: 900px;
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero h1 {
@@ -134,10 +146,18 @@ section {
   padding: 80px 20px;
   max-width: 1000px;
   margin: auto;
+  animation: sectionFade 1s ease forwards;
 }
 
-section:first-of-type {
-  padding-top: 120px;
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 h2 {
