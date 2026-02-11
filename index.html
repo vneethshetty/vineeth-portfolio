@@ -41,13 +41,30 @@
   </div>
 </header>
 
+<section id="terminal">
+  <div class="terminal-window">
+    <div class="terminal-header">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+      <span class="terminal-title">vineeth@devops:~$</span>
+    </div>
+    <div class="terminal-body">
+      <p id="terminal-text"></p>
+    </div>
+  </div>
+</section>
+
 <section id="about">
   <div class="glass-panel">
     <h2>About Me</h2>
     <p>
-      Cloud-focused DevOps Engineer passionate about building scalable,
-      secure and automated cloud-native systems. Experienced in AWS,
-      CI/CD pipelines, container orchestration and infrastructure automation.
+      DevOps & Cloud Engineer with hands-on experience designing and deploying 
+      scalable cloud infrastructure on AWS. Strong expertise in CI/CD automation, 
+      containerization, and production-grade deployments. 
+      Experienced in S3, CloudFront, IAM, GitHub Actions, Docker, Kubernetes, 
+      and infrastructure automation with a strong focus on reliability, 
+      security, and operational efficiency.
     </p>
   </div>
 </section>
@@ -56,14 +73,15 @@
   <div class="glass-panel">
     <h2>Core Skills</h2>
     <div class="skills-grid">
-      <span>AWS</span>
+      <span>AWS (S3, CloudFront, IAM, EC2)</span>
       <span>Docker</span>
       <span>Kubernetes</span>
-      <span>GitHub Actions</span>
+      <span>GitHub Actions CI/CD</span>
       <span>Jenkins</span>
       <span>Terraform</span>
       <span>Prometheus</span>
       <span>Grafana</span>
+      <span>Linux</span>
     </div>
   </div>
 </section>
@@ -71,16 +89,34 @@
 <section id="projects">
   <div class="glass-panel">
     <h2>Featured Project</h2>
+
     <div class="project-card">
-      <h3>AWS Bedrock AI Integration</h3>
+      <h3>AWS Bedrock AI Integration Platform</h3>
+
       <p>
-        Integrated Anthropic Claude using AWS Bedrock with IAM authentication,
-        inference profiles and secure GitHub workflow.
+        Designed and implemented secure AWS Bedrock integration using IAM authentication 
+        and inference profiles. Automated deployment through GitHub Actions CI/CD pipeline. 
+        Deployed production-ready frontend using AWS S3 static hosting and CloudFront CDN 
+        with automated cache invalidation.
       </p>
+
+      <p style="margin-top:15px; color:#94a3b8;">
+        • Secure credential handling with GitHub secret scanning protection<br/>
+        • CloudFront HTTPS delivery<br/>
+        • Automated S3 sync deployment<br/>
+        • Production-grade infrastructure setup
+      </p>
+
       <a href="https://github.com/vneethshetty/aws-bedrock-claude-demo" target="_blank">
-        View on GitHub →
+        View Project Repository →
       </a>
     </div>
+
+    <p style="margin-top:30px;color:#94a3b8;">
+      Live deployment powered by AWS S3 static hosting, CloudFront CDN (HTTPS),
+      and automated CI/CD using GitHub Actions with distribution cache invalidation.
+    </p>
+
   </div>
 </section>
 
