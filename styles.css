@@ -4,8 +4,10 @@ body {
   background: #0b1120;
   color: #e2e8f0;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
+/* NAVBAR */
 .navbar {
   position: fixed;
   width: 100%;
@@ -39,16 +41,17 @@ body {
   color: #38bdf8;
 }
 
+/* HERO */
 .hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   overflow: hidden;
   background: #0b1120;
-  padding-top: 60px;
+  padding: 0 20px;
 }
 
 .hero-overlay {
@@ -69,6 +72,7 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
+  max-width: 900px;
 }
 
 .hero h1 {
@@ -92,6 +96,7 @@ body {
   margin-top: 30px;
 }
 
+/* BUTTONS */
 .btn-primary {
   background: #2563eb;
   padding: 12px 25px;
@@ -124,10 +129,15 @@ body {
   color: white;
 }
 
+/* SECTIONS */
 section {
-  padding: 100px 20px;
+  padding: 80px 20px;
   max-width: 1000px;
   margin: auto;
+}
+
+section:first-of-type {
+  padding-top: 120px;
 }
 
 h2 {
@@ -137,6 +147,7 @@ h2 {
   padding-left: 15px;
 }
 
+/* SKILLS */
 .skills-grid span {
   display: inline-block;
   background: #1e293b;
@@ -151,6 +162,7 @@ h2 {
   transform: translateY(-3px);
 }
 
+/* PROJECT CARD */
 .project-card {
   background: #1e293b;
   padding: 25px;
@@ -169,6 +181,7 @@ h2 {
   font-weight: 600;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 40px;
