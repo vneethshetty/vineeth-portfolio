@@ -1,16 +1,35 @@
-function revealOnScroll() {
-  const reveals = document.querySelectorAll(".reveal");
+// Scroll Progress Bar
+window.addEventListener("scroll", () => {
+  const scrollTop = document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const progress = (scrollTop / scrollHeight) * 100;
+  document.querySelector(".progress-bar").style.width = progress + "%";
+});
 
-  reveals.forEach((element) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
-    const revealPoint = 100;
+// Navbar Background Change
+window.addEventListener("scroll", () => {
+  const navbar = document.querySelector(".navbar");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
 
-    if (elementTop < windowHeight - revealPoint) {
-      element.classList.add("active");
+// Section Reveal
+const sections = document.querySelectorAll("section");
+
+const revealSections = () => {
+  const triggerBottom = window.innerHeight * 0.85;
+
+  sections.forEach(section => {
+    const boxTop = section.getBoundingClientRect().top;
+
+    if (boxTop < triggerBottom) {
+      section.classList.add("visible");
     }
   });
-}
+};
 
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("load", revealOnScroll);
+window.addEventListener("scroll", revealSections);
+window.addEventListener("load", revealSections);
