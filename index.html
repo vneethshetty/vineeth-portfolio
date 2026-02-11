@@ -18,8 +18,9 @@
     <div class="logo">VKS</div>
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
     </div>
   </div>
 </nav>
@@ -29,7 +30,7 @@
 
   <div class="hero-content">
     <h1>Vineeth Kumar Shetty</h1>
-    <p class="subtitle typing-text">DevOps & Cloud Engineer</p>
+    <p class="subtitle">DevOps & Cloud Engineer</p>
     <p class="tagline">AWS • Kubernetes • CI/CD • Infrastructure as Code</p>
 
     <div class="buttons">
@@ -41,82 +42,31 @@
   </div>
 </header>
 
-<section id="terminal">
-  <div class="terminal-window">
-    <div class="terminal-header">
-      <span class="dot red"></span>
-      <span class="dot yellow"></span>
-      <span class="dot green"></span>
-      <span class="terminal-title">vineeth@devops:~$</span>
-    </div>
-    <div class="terminal-body">
-      <p id="terminal-text"></p>
-    </div>
-  </div>
-</section>
-
 <section id="about">
   <div class="glass-panel">
-    <h2>About Me</h2>
-    <p>
-      DevOps & Cloud Engineer with hands-on experience designing and deploying 
-      scalable cloud infrastructure on AWS. Strong expertise in CI/CD automation, 
-      containerization, and production-grade deployments. 
-      Experienced in S3, CloudFront, IAM, GitHub Actions, Docker, Kubernetes, 
-      and infrastructure automation with a strong focus on reliability, 
-      security, and operational efficiency.
-    </p>
+    <h2>About</h2>
+    <p id="about-content"></p>
   </div>
 </section>
 
-<section id="skills">
+<section id="experience">
   <div class="glass-panel">
-    <h2>Core Skills</h2>
-    <div class="skills-grid">
-      <span>AWS (S3, CloudFront, IAM, EC2)</span>
-      <span>Docker</span>
-      <span>Kubernetes</span>
-      <span>GitHub Actions CI/CD</span>
-      <span>Jenkins</span>
-      <span>Terraform</span>
-      <span>Prometheus</span>
-      <span>Grafana</span>
-      <span>Linux</span>
-    </div>
+    <h2>Experience</h2>
+    <div id="experience-container"></div>
   </div>
 </section>
 
 <section id="projects">
   <div class="glass-panel">
-    <h2>Featured Project</h2>
+    <h2>Projects</h2>
+    <div id="projects-container"></div>
+  </div>
+</section>
 
-    <div class="project-card">
-      <h3>AWS Bedrock AI Integration Platform</h3>
-
-      <p>
-        Designed and implemented secure AWS Bedrock integration using IAM authentication 
-        and inference profiles. Automated deployment through GitHub Actions CI/CD pipeline. 
-        Deployed production-ready frontend using AWS S3 static hosting and CloudFront CDN 
-        with automated cache invalidation.
-      </p>
-
-      <p style="margin-top:15px; color:#94a3b8;">
-        • Secure credential handling with GitHub secret scanning protection<br/>
-        • CloudFront HTTPS delivery<br/>
-        • Automated S3 sync deployment<br/>
-        • Production-grade infrastructure setup
-      </p>
-
-      <a href="https://github.com/vneethshetty/aws-bedrock-claude-demo" target="_blank">
-        View Project Repository →
-      </a>
-    </div>
-
-    <p style="margin-top:30px;color:#94a3b8;">
-      Live deployment powered by AWS S3 static hosting, CloudFront CDN (HTTPS),
-      and automated CI/CD using GitHub Actions with distribution cache invalidation.
-    </p>
-
+<section id="certifications">
+  <div class="glass-panel">
+    <h2>Certifications</h2>
+    <div id="certifications-container"></div>
   </div>
 </section>
 
@@ -124,6 +74,7 @@
   <p>© 2026 Vineeth Kumar Shetty</p>
 </footer>
 
+<script src="data.js"></script>
 <script src="script.js"></script>
 
 </body>
