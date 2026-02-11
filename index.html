@@ -5,12 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vineeth Kumar Shetty | DevOps & Cloud Engineer</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">VKS</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </div>
+</nav>
 
 <header class="hero">
   <div class="hero-content">
@@ -20,7 +30,9 @@
 
     <div class="buttons">
       <a href="#projects" class="btn-primary">View Projects</a>
-      <a href="#" class="btn-outline">Download Resume</a>
+      <a href="resume.pdf" class="btn-outline" target="_blank">Download Resume</a>
+      <a href="https://github.com/vneethshetty" class="btn-outline" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN" class="btn-outline" target="_blank">LinkedIn</a>
     </div>
   </div>
 </header>
@@ -54,12 +66,21 @@
     <h3>AWS Bedrock AI Integration</h3>
     <p>
       Integrated Anthropic Claude using AWS Bedrock with IAM authentication,
-      inference profiles, and secure GitHub workflow.
+      inference profiles and secure GitHub workflow.
     </p>
     <a href="https://github.com/vneethshetty/aws-bedrock-claude-demo" target="_blank">
       View on GitHub →
     </a>
   </div>
+</section>
+
+<section id="deployment">
+  <h2>Deployment Architecture</h2>
+  <p>
+    This portfolio is deployed using AWS S3 for static hosting,
+    CloudFront CDN for global delivery and GitHub Actions for
+    automated CI/CD pipeline with cache invalidation.
+  </p>
 </section>
 
 <footer>
