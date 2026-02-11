@@ -1,4 +1,4 @@
-// Scroll Progress Bar
+// Scroll Progress
 window.addEventListener("scroll", () => {
   const scrollTop = document.documentElement.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -6,30 +6,15 @@ window.addEventListener("scroll", () => {
   document.querySelector(".progress-bar").style.width = progress + "%";
 });
 
-// Navbar Background Change
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar");
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
+// Typing Animation
+const text = "DevOps & Cloud Engineer";
+let i = 0;
+function typeEffect() {
+  if (i < text.length) {
+    document.querySelector(".typing-text").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 80);
   }
-});
-
-// Section Reveal
-const sections = document.querySelectorAll("section");
-
-const revealSections = () => {
-  const triggerBottom = window.innerHeight * 0.85;
-
-  sections.forEach(section => {
-    const boxTop = section.getBoundingClientRect().top;
-
-    if (boxTop < triggerBottom) {
-      section.classList.add("visible");
-    }
-  });
-};
-
-window.addEventListener("scroll", revealSections);
-window.addEventListener("load", revealSections);
+}
+document.querySelector(".typing-text").innerHTML = "";
+typeEffect();
