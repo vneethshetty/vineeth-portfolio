@@ -99,3 +99,26 @@ body {
   font-size: 3rem;
   margin-bottom: 10px;
   background: linear-gradient(90deg, #
+
+/* Contact Section */
+.contact-links {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2563eb, #6366f1);
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(37,99,235,0.4);
+}
