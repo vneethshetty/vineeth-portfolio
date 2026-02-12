@@ -7,8 +7,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body>
 
 <header>
@@ -19,8 +19,6 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -29,13 +27,15 @@
 <section class="hero">
   <div class="hero-left">
     <h1>Vineeth Kumar Shetty</h1>
-    <h2>DevSecOps / DevOps Engineer</h2>
-    <p>AWS • Kubernetes • CI/CD • DevSecOps • Infrastructure as Code</p>
+    <h2>DevSecOps & Cloud Engineer</h2>
+    <p class="tagline">
+      Building secure, scalable cloud infrastructure and automated DevOps pipelines across AWS ecosystems.
+    </p>
 
-    <div class="buttons">
-      <a class="btn primary" href="Vineeth-Kumar-Shetty-DevOps.pdf" download>Download Resume</a>
-      <a class="btn" href="https://github.com/vneethshetty" target="_blank">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/vineeth-shetty-aa3ab61b1" target="_blank">LinkedIn</a>
+    <div class="hero-buttons">
+      <a href="Vineeth-Kumar-Shetty-DevOps.pdf" download class="btn primary">Download Resume</a>
+      <a href="https://github.com/vneethshetty" target="_blank" class="btn">GitHub</a>
+      <a href="https://linkedin.com/in/vineeth-shetty-aa3ab61b1" target="_blank" class="btn">LinkedIn</a>
     </div>
   </div>
 
@@ -44,74 +44,88 @@
   </div>
 </section>
 
-<section id="about" class="container">
-  <div class="card">
-    <h3>About</h3>
+<section id="about" class="section">
+  <div class="glass">
+    <h3>About Me</h3>
     <p>
-      DevSecOps / DevOps Engineer with 2.5 years of experience designing AWS cloud infrastructure and building Jenkins-based CI/CD pipelines.
-      Strong expertise in Docker, Kubernetes, SonarQube, Trivy integration, IAM hardening, VPC design, and OWASP Top 10 controls.
-      Proven ability to build end-to-end DevSecOps workflows and troubleshoot production CI/CD environments.
+      DevSecOps / DevOps Engineer with 2.5+ years of hands-on experience designing AWS infrastructure,
+      building secure CI/CD pipelines, and deploying containerized applications at scale.
+      I specialize in automating infrastructure using Infrastructure as Code, integrating security into pipelines,
+      and optimizing production environments for reliability and performance.
+    </p>
+    <p>
+      Passionate about cloud-native technologies, Kubernetes orchestration, and building DevSecOps workflows
+      that align development velocity with enterprise security standards.
     </p>
   </div>
 </section>
 
-<section id="experience" class="container">
-  <h3>Experience</h3>
+<section id="experience" class="section">
+  <h3>Professional Experience</h3>
 
   <div class="timeline">
 
     <div class="timeline-item">
       <h4>Associate System Engineer — TietoEvry India Pvt Ltd</h4>
-      <span>06/2022 – 07/2024 | Bangalore</span>
+      <span>June 2022 – July 2024 | Bangalore</span>
       <ul>
-        <li>Designed secure AWS VPC architectures (public/private subnets, NAT, peering)</li>
-        <li>Implemented IAM least-privilege policies reducing access risks by 35%</li>
-        <li>Built CI/CD pipelines with GitHub & Jenkins reducing manual effort by 50%</li>
-        <li>Containerized apps with Docker and deployed on Kubernetes improving availability by 40%</li>
-        <li>Applied OWASP Top 10 controls reducing vulnerabilities by 30%</li>
+        <li>Architected AWS VPC environments with public/private subnets, NAT Gateways & IAM controls.</li>
+        <li>Designed Jenkins & GitHub CI/CD pipelines reducing manual deployments by 50%.</li>
+        <li>Containerized microservices using Docker & deployed via Kubernetes clusters.</li>
+        <li>Integrated Trivy & SonarQube for automated vulnerability scanning.</li>
+        <li>Applied OWASP Top 10 best practices reducing security risks by 30%.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h4>DevSecOps MicroDegree Internship — AWS Solutions Architect Track</h4>
+      <span>2023</span>
+      <ul>
+        <li>Built secure cloud lab environments using EC2, S3, IAM & CloudFront.</li>
+        <li>Implemented infrastructure security using IAM policies and network segmentation.</li>
+        <li>Deployed DevSecOps pipelines with container security integration.</li>
       </ul>
     </div>
 
     <div class="timeline-item">
       <h4>Assistant Professor & IT Consultant — Alva's Institute</h4>
-      <span>09/2024 – 08/2025 | Moodbidri</span>
+      <span>Sept 2024 – Aug 2025</span>
       <ul>
-        <li>Conducted VAPT for web & network environments</li>
-        <li>Delivered training in Cybersecurity & Cloud</li>
-        <li>Mentored students for SOC & Cloud Security roles</li>
+        <li>Conducted VAPT assessments for web and network environments.</li>
+        <li>Mentored students in Cloud Security and DevOps career paths.</li>
       </ul>
     </div>
 
   </div>
 </section>
 
-<section id="projects" class="container">
-  <h3>Projects</h3>
+<section id="projects" class="section">
+  <h3>Key Projects</h3>
 
-  <div class="grid">
+  <div class="project-grid">
 
-    <div class="card">
+    <div class="glass hover-card">
       <h4>DevSecOps CI/CD Pipeline</h4>
-      <p>Jenkins pipeline with Docker builds, AWS ECR push, EC2 deployment & Grafana monitoring.</p>
+      <p>End-to-end Jenkins pipeline with Docker builds, ECR push, EC2 deployment & monitoring stack.</p>
     </div>
 
-    <div class="card">
-      <h4>Full Stack Next.js DevOps Project</h4>
-      <p>Dockerized Next.js app with automated Jenkins deployment on AWS EC2.</p>
+    <div class="glass hover-card">
+      <h4>AWS Bedrock AI Integration</h4>
+      <p>Integrated Amazon Bedrock with secure IAM configuration and automated GitHub Actions deployment.</p>
     </div>
 
-    <div class="card">
-      <h4>Personal DevSecOps Pipeline</h4>
-      <p>Integrated Trivy, SonarQube & Jenkins for secure CI/CD automation.</p>
+    <div class="glass hover-card">
+      <h4>Full Stack DevOps Deployment</h4>
+      <p>Containerized Next.js application deployed on AWS using automated CI/CD pipelines.</p>
     </div>
 
   </div>
 </section>
 
-<section id="skills" class="container">
-  <h3>Skills</h3>
+<section id="skills" class="section">
+  <h3>Technical Stack</h3>
 
-  <div class="skills-grid">
+  <div class="skills">
     <span>AWS</span>
     <span>Docker</span>
     <span>Kubernetes</span>
@@ -127,29 +141,16 @@
   </div>
 </section>
 
-<section id="certifications" class="container">
-  <h3>Certifications</h3>
-  <div class="grid">
-    <div class="card">Fortinet Associate Cybersecurity (Valid 2027)</div>
-    <div class="card">Aviatrix Multicloud Associate (Valid 2027)</div>
-    <div class="card">AWS Solutions Architect – MicroDegree</div>
-  </div>
-</section>
+<section id="contact" class="section">
+  <div class="glass contact-card">
+    <h3>Let’s Connect</h3>
+    <p>Open to DevOps, Cloud & SRE opportunities.</p>
 
-<section id="education" class="container">
-  <h3>Education</h3>
-  <div class="card">
-    <p><strong>MSc Cybersecurity & Digital Forensics</strong> — Mangalore University (2022)</p>
-    <p><strong>BSc Physics, Mathematics, Statistics</strong> — Alvas College (2019)</p>
-  </div>
-</section>
-
-<section id="contact" class="container">
-  <h3>Contact</h3>
-  <div class="card">
-    <p>Email: mrvineethshetty@gmail.com</p>
-    <p>Phone: +91-7019346010</p>
-    <p>Location: Mangalore, India</p>
+    <div class="contact-buttons">
+      <a href="mailto:mrvineethshetty@gmail.com" class="btn primary">Email</a>
+      <a href="https://linkedin.com/in/vineeth-shetty-aa3ab61b1" target="_blank" class="btn">LinkedIn</a>
+      <a href="https://github.com/vneethshetty" target="_blank" class="btn">GitHub</a>
+    </div>
   </div>
 </section>
 
