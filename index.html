@@ -3,117 +3,159 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vineeth Kumar Shetty | DevSecOps Engineer</title>
+<title>Vineeth Kumar Shetty | DevOps Engineer</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-</head>
 
+</head>
 <body>
 
-<nav class="navbar">
-  <div class="nav-container">
+<header>
+  <div class="nav">
     <div class="logo">VKS</div>
-    <div class="nav-links">
+    <nav>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#education">Education</a>
       <a href="#certifications">Certifications</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-container">
-    <div class="hero-left">
-      <h1>Vineeth Kumar Shetty</h1>
-      <p class="subtitle">DevSecOps / DevOps Engineer</p>
-      <p class="tagline">
-        AWS • Kubernetes • CI/CD • DevSecOps • Infrastructure as Code
-      </p>
-
-      <div class="buttons">
-        <a href="resume.pdf" class="btn-primary" download>Download Resume</a>
-        <a href="https://github.com/vneethshetty" class="btn-outline" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/vineeth-shetty-aa3ab61b1" class="btn-outline" target="_blank">LinkedIn</a>
-      </div>
-    </div>
-
-    <div class="hero-right">
-      <img src="profile.png" class="profile-photo" alt="Vineeth Kumar Shetty">
-    </div>
+    </nav>
   </div>
 </header>
 
-<section id="about">
-  <div class="section-container">
-    <h2>About</h2>
+<section class="hero">
+  <div class="hero-left">
+    <h1>Vineeth Kumar Shetty</h1>
+    <h2>DevSecOps / DevOps Engineer</h2>
+    <p>AWS • Kubernetes • CI/CD • DevSecOps • Infrastructure as Code</p>
+
+    <div class="buttons">
+      <a class="btn primary" href="Vineeth-Kumar-Shetty-DevOps.pdf" download>Download Resume</a>
+      <a class="btn" href="https://github.com/vneethshetty" target="_blank">GitHub</a>
+      <a class="btn" href="https://linkedin.com/in/vineeth-shetty-aa3ab61b1" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <img src="profile.png" alt="Vineeth Kumar Shetty">
+  </div>
+</section>
+
+<section id="about" class="container">
+  <div class="card">
+    <h3>About</h3>
     <p>
-      DevSecOps / DevOps Engineer with 2.5+ years of experience designing secure AWS cloud
-      infrastructure and building automated CI/CD pipelines. Strong hands-on expertise in
-      Docker, Kubernetes, Jenkins, GitHub Actions and security integrations including
-      SonarQube and Trivy. Proven track record of reducing manual deployment effort by 50%
-      and strengthening IAM security posture by 35%.
+      DevSecOps / DevOps Engineer with 2.5 years of experience designing AWS cloud infrastructure and building Jenkins-based CI/CD pipelines.
+      Strong expertise in Docker, Kubernetes, SonarQube, Trivy integration, IAM hardening, VPC design, and OWASP Top 10 controls.
+      Proven ability to build end-to-end DevSecOps workflows and troubleshoot production CI/CD environments.
     </p>
   </div>
 </section>
 
-<section id="experience">
-  <div class="section-container">
-    <h2>Experience</h2>
+<section id="experience" class="container">
+  <h3>Experience</h3>
+
+  <div class="timeline">
 
     <div class="timeline-item">
-      <h3>Associate System Engineer — TietoEvry India Pvt Ltd</h3>
-      <span>June 2022 – July 2024 | Bangalore</span>
+      <h4>Associate System Engineer — TietoEvry India Pvt Ltd</h4>
+      <span>06/2022 – 07/2024 | Bangalore</span>
       <ul>
-        <li>Designed secure AWS VPC architectures (public/private subnets, NAT, peering).</li>
-        <li>Implemented IAM least-privilege policies reducing unauthorized access by 35%.</li>
-        <li>Built Jenkins + GitHub CI/CD pipelines reducing manual effort by 50%.</li>
-        <li>Led Docker containerization and Kubernetes deployments improving availability by 40%.</li>
-        <li>Applied OWASP Top 10 controls reducing vulnerabilities by 30%.</li>
+        <li>Designed secure AWS VPC architectures (public/private subnets, NAT, peering)</li>
+        <li>Implemented IAM least-privilege policies reducing access risks by 35%</li>
+        <li>Built CI/CD pipelines with GitHub & Jenkins reducing manual effort by 50%</li>
+        <li>Containerized apps with Docker and deployed on Kubernetes improving availability by 40%</li>
+        <li>Applied OWASP Top 10 controls reducing vulnerabilities by 30%</li>
       </ul>
     </div>
 
     <div class="timeline-item">
-      <h3>Assistant Professor & IT Consultant — Alva’s Institute</h3>
-      <span>Sept 2024 – Aug 2025</span>
+      <h4>Assistant Professor & IT Consultant — Alva's Institute</h4>
+      <span>09/2024 – 08/2025 | Moodbidri</span>
       <ul>
-        <li>Conducted VAPT engagements for web and network environments.</li>
-        <li>Delivered training in Cybersecurity and Cloud Computing.</li>
-        <li>Mentored students for SOC, Cloud Security & Pen Testing roles.</li>
+        <li>Conducted VAPT for web & network environments</li>
+        <li>Delivered training in Cybersecurity & Cloud</li>
+        <li>Mentored students for SOC & Cloud Security roles</li>
       </ul>
     </div>
 
   </div>
 </section>
 
-<section id="projects">
-  <div class="section-container">
-    <h2>Projects</h2>
+<section id="projects" class="container">
+  <h3>Projects</h3>
+
+  <div class="grid">
 
     <div class="card">
-      <h3>DevSecOps CI/CD Pipeline with AWS ECR & Jenkins</h3>
-      <p>
-        Built end-to-end Jenkins pipeline for Docker builds and AWS ECR deployment.
-        Integrated SonarQube and Trivy for automated security scanning.
-        Monitored workloads with Grafana dashboards.
-      </p>
+      <h4>DevSecOps CI/CD Pipeline</h4>
+      <p>Jenkins pipeline with Docker builds, AWS ECR push, EC2 deployment & Grafana monitoring.</p>
     </div>
 
     <div class="card">
-      <h3>Full Stack Next.js DevOps CI/CD Deployment</h3>
-      <p>
-        Designed full-stack application and automated Docker-based deployment to AWS EC2.
-        Implemented zero-downtime container replacement workflow.
-      </p>
+      <h4>Full Stack Next.js DevOps Project</h4>
+      <p>Dockerized Next.js app with automated Jenkins deployment on AWS EC2.</p>
+    </div>
+
+    <div class="card">
+      <h4>Personal DevSecOps Pipeline</h4>
+      <p>Integrated Trivy, SonarQube & Jenkins for secure CI/CD automation.</p>
     </div>
 
   </div>
 </section>
 
-<section id="skills">
-  <div class="section-container">
-    <h2>Technical Skills</h2
+<section id="skills" class="container">
+  <h3>Skills</h3>
+
+  <div class="skills-grid">
+    <span>AWS</span>
+    <span>Docker</span>
+    <span>Kubernetes</span>
+    <span>Terraform</span>
+    <span>Ansible</span>
+    <span>Jenkins</span>
+    <span>GitHub Actions</span>
+    <span>Trivy</span>
+    <span>SonarQube</span>
+    <span>Prometheus</span>
+    <span>Grafana</span>
+    <span>Python</span>
+  </div>
+</section>
+
+<section id="certifications" class="container">
+  <h3>Certifications</h3>
+  <div class="grid">
+    <div class="card">Fortinet Associate Cybersecurity (Valid 2027)</div>
+    <div class="card">Aviatrix Multicloud Associate (Valid 2027)</div>
+    <div class="card">AWS Solutions Architect – MicroDegree</div>
+  </div>
+</section>
+
+<section id="education" class="container">
+  <h3>Education</h3>
+  <div class="card">
+    <p><strong>MSc Cybersecurity & Digital Forensics</strong> — Mangalore University (2022)</p>
+    <p><strong>BSc Physics, Mathematics, Statistics</strong> — Alvas College (2019)</p>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h3>Contact</h3>
+  <div class="card">
+    <p>Email: mrvineethshetty@gmail.com</p>
+    <p>Phone: +91-7019346010</p>
+    <p>Location: Mangalore, India</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Vineeth Kumar Shetty — DevOps Portfolio
+</footer>
+
+</body>
+</html>
